@@ -14,9 +14,10 @@ import listarpaises.desmob.ads.usjt.br.listapaises.R;
 
 
 /**
- * Created by Matheus Ribeiro on 18/03/2018.
- * RA 816117880
+ * Created by Matheus Ribeiro on 20/04/2018.
+ * RA 816117912
  */
+
 
 public class ListaPaisesActivity extends Activity {
     public static final String PAIS = "br.usjt.ads.desmob.listarpaises.pais";

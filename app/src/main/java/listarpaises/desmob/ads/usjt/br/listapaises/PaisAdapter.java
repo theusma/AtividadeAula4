@@ -18,9 +18,10 @@ import listarpaises.desmob.ads.usjt.br.listapaises.R;
 import static br.usjt.ads.desmob.listarpaises.R.drawable.bandeira;
 
 /**
- * Created by Matheus Ribeiro on 18/03/2018.
- * RA 816117880
+ * Created by Matheus Ribeiro on 20/04/2018.
+ * RA 816117912
  */
+
 public class PaisAdapter extends BaseAdapter implements SectionIndexer {
     private br.usjt.ads.desmob.listarpaises.Pais[] paises;
     private Activity activity;
@@ -71,7 +72,7 @@ public class PaisAdapter extends BaseAdapter implements SectionIndexer {
         viewHolder.getDetalhe().setText(String.format("região: %s - capital: %s",
                 paises[position].getRegiao(),
                 paises[position].getCapital()));
-        Drawable drawable = Util.getDrawable(activity, paises[position].getCodigo3().toLowerCase());
+        Drawable drawable = br.usjt.ads.desmob.listarpaises.Util.getDrawable(activity, paises[position].getCodigo3().toLowerCase());
         if(drawable == null){
             drawable = activity.getDrawable(bandeira);
         }

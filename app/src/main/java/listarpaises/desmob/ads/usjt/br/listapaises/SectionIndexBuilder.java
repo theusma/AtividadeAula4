@@ -3,10 +3,9 @@ package br.usjt.ads.desmob.listarpaises;
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.TreeSet;
-
 /**
- * Created by Matheus Ribeiro on 18/03/2018.
- * RA 816117880
+ * Created by Matheus Ribeiro on 20/04/2018.
+ * RA 816117912
  */
 
 public class SectionIndexBuilder {

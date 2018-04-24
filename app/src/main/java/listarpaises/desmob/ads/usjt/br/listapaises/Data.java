@@ -5,29 +5,30 @@ import java.util.Arrays;
 
 
 /**
- * Created by Matheus Ribeiro on 18/03/2018.
- * RA 816117880
+ * Created by Matheus Ribeiro on 20/04/2018.
+ * RA 816117912
  */
+
 public class Data {
 
-    public static ArrayList<String> listarNomes(Pais[] paises){
+    public static ArrayList<String> listarNomes(br.usjt.ads.desmob.listarpaises.Pais[] paises){
         ArrayList<String> nomes = new ArrayList<>();
-        for (Pais pais : paises) {
+        for (br.usjt.ads.desmob.listarpaises.Pais pais : paises) {
             nomes.add(pais.getNome());
         }
         return nomes;
     }
-    public static Pais[] listarPaises(String continente) {
-        Pais[] lista;
-        ArrayList<Pais> paises = new ArrayList<>();
+    public static br.usjt.ads.desmob.listarpaises.Pais[] listarPaises(String continente) {
+        br.usjt.ads.desmob.listarpaises.Pais[] lista;
+        ArrayList<br.usjt.ads.desmob.listarpaises.Pais> paises = new ArrayList<>();
         //carrega somente os paises da regiao escolhida
-        for (Pais pais : todosPaises()) {
+        for (br.usjt.ads.desmob.listarpaises.Pais pais : todosPaises()) {
             if (pais.getRegiao().equals(continente) || continente.equals("Todos")) {
                 paises.add(pais);
             }
         }
         //converte para vetor para poder ordenar usando o sort da classe Arrays
-        lista = paises.toArray(new Pais[0]);
+        lista = paises.toArray(new br.usjt.ads.desmob.listarpaises.Pais[0]);
         //ordena baseado no compareTo sobrescrito na classe Pais
         //para funcionar, a classe pais precisa implementar a interface Comparable
         Arrays.sort(lista);
@@ -35,8 +36,8 @@ public class Data {
         return lista;
     }
 
-    private static ArrayList<Pais> todosPaises() {
-        ArrayList<Pais> paises = new ArrayList<>();
+    private static ArrayList<br.usjt.ads.desmob.listarpaises.Pais> todosPaises() {
+        ArrayList<br.usjt.ads.desmob.listarpaises.Pais> paises = new ArrayList<>();
         Pais pais;
         ArrayList<String> idiomas;
         ArrayList<String> moedas;

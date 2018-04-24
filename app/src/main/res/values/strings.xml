@@ -1,13 +1,3 @@
 <resources>
-<string name="app_name">ListarPaises</string>
-<string name="btn_busca">Listar</string>
-<string name="lblContinente">Continente: </string>
-<string-array name="continentes">
-    <item>Todos</item>
-    <item>Africa</item>
-    <item>Americas</item>
-    <item>Asia</item>
-    <item>Europe</item>
-    <item>Oceania</item>
-</string-array>
+    <string name="app_name">Paises</string>
 </resources>
